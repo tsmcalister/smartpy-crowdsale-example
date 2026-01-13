@@ -1,0 +1,21 @@
+[project]
+name = "blind_mint_example"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pytezos>=3.16.1",
+    "smartpy-tezos>=0.23.3",
+]
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[dependency-groups]
+dev = [
+    "python-dotenv>=1.2.1",
+]
